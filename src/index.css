@@ -1,0 +1,15 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.todo {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px;
+}
+
+.todo_content{
+  display: flex;
+  gap: 8px;
+}
