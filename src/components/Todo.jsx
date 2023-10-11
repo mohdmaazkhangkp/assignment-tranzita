@@ -14,7 +14,9 @@ const Todo = ({ title, index, id, handleEditTodo, handleDeleteTodo }) => {
       {isEdit ? (
         <form onSubmit={handleOnEditSubmit}>
           <input placeholder="Title" name="title" defaultValue={title} />
-          <button className="create_btn" type="submit">Save</button>
+          <button className="btn create_btn" type="submit">
+            Save
+          </button>
         </form>
       ) : (
         <div className="todo">
@@ -23,8 +25,18 @@ const Todo = ({ title, index, id, handleEditTodo, handleDeleteTodo }) => {
             <span>{title}</span>
           </div>
           <div>
-            <button className="edit_btn" onClick={() => setIsEdit((isEdit) => !isEdit)}>Edit</button>
-            <button className="delete_btn" onClick={()=> handleDeleteTodo(id)}>Delete</button>
+            <button
+              className="btn edit_btn"
+              onClick={() => setIsEdit((isEdit) => !isEdit)}
+            >
+              Edit
+            </button>
+            <button
+              className="btn delete_btn"
+              onClick={() => handleDeleteTodo(id)}
+            >
+              Delete
+            </button>
           </div>
         </div>
       )}

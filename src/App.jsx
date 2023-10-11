@@ -79,7 +79,6 @@ function App() {
     }
   };
 
-
   const handleDeleteTodo = async (id) => {
     try {
       const response = await axios.delete(
