@@ -11,7 +11,7 @@ const AddTodo = ({ handleAddTodo }) => {
         <form onSubmit={handleOnSubmit}>
           <h3>Add Todo</h3>
           <input placeholder="Title" name="title" />
-          <button onSubmit={handleOnSubmit}>Add</button>
+          <button className='create_btn' type="submit">Add</button>
           <hr />
         </form>
       );
